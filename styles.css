@@ -45,12 +45,12 @@ ul{padding-left:1.1em;}
   display:flex; align-items:center; justify-content:space-between;
   padding:10px 24px;
 }
-.nav__brand{ display:flex; align-items:center; gap:14px; text-decoration:none; }
-.nav__logo{height:64px; width:auto;}
+.nav__brand{ display:flex; align-items:center; gap:16px; text-decoration:none; }
+.nav__logo{height:88px; width:auto;}
 .nav__wordmark{
   font-family:var(--display);
   color:var(--cream);
-  font-size:1.15rem;
+  font-size:1.3rem;
   letter-spacing:.01em;
   text-transform:uppercase;
   line-height:1.15;
@@ -128,9 +128,9 @@ ul{padding-left:1.1em;}
 .btn--coral{ background:var(--navy); color:var(--cream); border-color:var(--navy); }
 
 @media (max-width: 780px){
-  .nav__inner{ padding:10px 16px; }
-  .nav__logo{ height:44px; }
-  .nav__wordmark{ font-size:.75rem; }
+  .nav__inner{ padding:8px 16px; }
+  .nav__logo{ height:56px; }
+  .nav__wordmark{ font-size:.8rem; }
   .nav__links{ gap:0; }
   .nav__links a:not(.nav__cta){ display:none; }
   .nav__cta{ padding:8px 14px; font-size:.85rem; }
