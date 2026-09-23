@@ -154,7 +154,17 @@ ul{padding-left:1.1em;}
   grid-template-columns:1fr 1fr;
   gap:64px;
   align-items:center;
+  position:relative;
 }
+.nosotros::before{
+  content:"";
+  position:absolute; inset:0;
+  background:url("images/patterns/topo-cream.svg");
+  background-size:360px 360px;
+  opacity:.6;
+  z-index:0;
+}
+.nosotros > *{ position:relative; z-index:1; }
 .nosotros__text h2{ font-size:2.2rem; color:var(--coral-dark); }
 .nosotros__text p{ max-width:52ch; font-size:1.05rem; }
 .nosotros__media{
@@ -173,9 +183,14 @@ ul{padding-left:1.1em;}
 
 /* ===== Clases ===== */
 .clases{
-  background:var(--navy);
+  background:var(--navy) url("images/patterns/topo-navy.svg");
+  background-size:360px 360px;
   color:var(--cream);
-  padding:100px 24px 120px;
+  padding:130px 24px 150px;
+  clip-path:polygon(0 40px, 100% 0, 100% 100%, 0 100%);
+  margin-top:-40px;
+  position:relative;
+  z-index:1;
 }
 .clases__title{
   text-align:center; font-size:2.4rem; color:var(--cream); margin-bottom:6px;
@@ -197,7 +212,25 @@ ul{padding-left:1.1em;}
   position:relative;
 }
 .clase-card:nth-child(2){ transform:translateY(28px); }
-.clase-card__img{ height:190px; width:100%; object-fit:cover; }
+.clase-card__imgwrap{ position:relative; }
+.clase-card__img{ height:190px; width:100%; object-fit:cover; display:block; }
+.price-sticker{
+  position:absolute; top:14px; right:14px;
+  width:64px; height:64px;
+  background:var(--coral);
+  color:var(--cream);
+  border:3px solid var(--cream);
+  border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  flex-direction:column;
+  font-family:var(--display);
+  font-size:.8rem;
+  line-height:1.15;
+  text-align:center;
+  transform:rotate(9deg);
+  box-shadow:0 4px 10px rgba(0,0,0,.35);
+}
+.price-sticker--gold{ background:var(--gold); transform:rotate(-8deg); }
 .clase-card__body{ padding:22px 22px 26px; }
 .clase-card h3{ font-size:1.25rem; margin-bottom:12px; }
 .clase-card--coral h3{ color:var(--coral-dark); }
@@ -221,11 +254,39 @@ ul{padding-left:1.1em;}
   .clase-card:nth-child(2){ transform:none; }
 }
 
+.servicios{
+  max-width:900px; margin:80px auto 0;
+  text-align:center;
+  border-top:2px solid rgba(245,241,230,.2);
+  padding-top:56px;
+}
+.servicios__title{ font-family:var(--display); font-size:1.6rem; color:var(--cream); margin-bottom:8px; }
+.servicios__sub{ opacity:.8; margin-bottom:36px; }
+.servicios__grid{ display:grid; grid-template-columns:1fr 1fr; gap:24px; text-align:left; }
+.servicio-card{
+  background:rgba(245,241,230,.08);
+  border:1px solid rgba(245,241,230,.25);
+  border-radius:2px;
+  padding:24px;
+}
+.servicio-card h4{ font-family:var(--display); font-size:1.05rem; color:var(--gold); margin:0 0 10px; }
+.servicio-card p{ font-size:.92rem; opacity:.85; margin:0; }
+.servicios__cta{ margin-top:32px; font-weight:700; color:var(--coral); }
+
+@media (max-width: 700px){
+  .servicios__grid{ grid-template-columns:1fr; }
+}
+
 /* ===== Ubicaciones ===== */
 .ubicaciones{
-  background:var(--gold);
+  background:var(--gold) url("images/patterns/topo-gold.svg");
+  background-size:360px 360px;
   color:var(--ink);
-  padding:100px 24px 80px;
+  padding:140px 24px 130px;
+  clip-path:polygon(0 0, 100% 46px, 100% 100%, 0 calc(100% - 46px));
+  margin-top:-46px;
+  position:relative;
+  z-index:1;
 }
 .ubicaciones__inner{ max-width:1200px; margin:0 auto; }
 .ubicaciones h2{ font-size:2.2rem; color:var(--navy); text-align:center; }
@@ -233,8 +294,15 @@ ul{padding-left:1.1em;}
 .ubicaciones__content{
   display:grid; grid-template-columns:1.3fr 1fr; gap:48px; align-items:center;
 }
-.ruta{ list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:22px; }
-.ruta li{ display:flex; align-items:flex-start; gap:16px; }
+.ruta{ list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:22px; position:relative; }
+.ruta::before{
+  content:"";
+  position:absolute; left:17px; top:17px; bottom:17px;
+  width:0;
+  border-left:3px dashed var(--navy);
+  opacity:.5;
+}
+.ruta li{ display:flex; align-items:flex-start; gap:16px; position:relative; z-index:1; }
 .ruta__marker{
   flex:none;
   width:34px; height:34px; border-radius:50%;
@@ -257,9 +325,16 @@ ul{padding-left:1.1em;}
   background:var(--olive);
   display:grid;
   grid-template-columns:1fr 1.1fr;
+  margin-top:-46px;
+  position:relative;
+  z-index:1;
 }
-.normas__media img{ height:100%; object-fit:cover; min-height:420px; }
-.normas__list{ padding:80px 6vw; color:var(--cream); }
+.normas__media img{ height:100%; object-fit:cover; min-height:460px; }
+.normas__list{
+  padding:110px 6vw 80px; color:var(--cream);
+  background:url("images/patterns/topo-olive.svg");
+  background-size:360px 360px;
+}
 .normas__list h2{ font-size:2.1rem; margin-bottom:26px; color:var(--cream); }
 .normas__list ul{ list-style:none; padding:0; display:flex; flex-direction:column; gap:14px; }
 .normas__list li{
@@ -284,8 +359,16 @@ ul{padding-left:1.1em;}
   display:grid; grid-template-columns:1.15fr 1fr;
   background:var(--coral);
   color:var(--cream);
+  clip-path:polygon(0 46px, 100% 0, 100% 100%, 0 100%);
+  margin-top:-46px;
+  position:relative;
+  z-index:1;
 }
-.inscribete__panel{ padding:90px 6vw; }
+.inscribete__panel{
+  padding:120px 6vw 90px;
+  background:url("images/patterns/topo-coral.svg");
+  background-size:360px 360px;
+}
 .inscribete__panel h2{ font-size:2.2rem; color:var(--cream); margin-bottom:36px; }
 .pasos{ list-style:none; padding:0; margin:0 0 40px; display:flex; flex-direction:column; gap:22px; }
 .pasos li{ display:flex; gap:18px; align-items:flex-start; }
