@@ -499,7 +499,7 @@ ul{padding-left:1.1em;}
 .reporta-pago{
   background:var(--cream);
   text-align:center;
-  padding:80px 24px;
+  padding:80px 24px 52px;
 }
 .reporta-pago__logo{ height:64px; margin:0 auto 20px; }
 .reporta-pago h2{ font-family:var(--display); font-size:1.8rem; color:var(--coral-dark); margin-bottom:12px; }
@@ -523,3 +523,41 @@ ul{padding-left:1.1em;}
 .footer__wordmark{ font-family:var(--display); font-size:1.4rem; text-transform:uppercase; letter-spacing:.02em; }
 .footer p{ opacity:.75; margin-bottom:18px; }
 .footer__top{ font-size:.85rem; text-decoration:underline; opacity:.7; }
+
+/* ===== Contacto ===== */
+.contacto{ background:var(--cream); padding:0 24px 64px; }
+.contacto__wrap{ max-width:900px; margin:0 auto; padding-top:34px; border-top:1px solid rgba(27,29,36,.18); }
+.contacto__lista{
+  list-style:none; margin:0 auto; padding:0;
+  display:flex; flex-wrap:wrap; justify-content:center; gap:20px 48px;
+}
+.contacto__lista a{
+  display:inline-flex; align-items:center; gap:12px;
+  color:var(--ink); text-decoration:none; font-weight:600; font-size:1rem;
+}
+.contacto__lista a:hover span, .contacto__lista a:focus-visible span{ text-decoration:underline; }
+.contacto__lista svg{
+  width:28px; height:28px; flex:none;
+  fill:none; stroke:#000; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round;
+}
+@media (max-width: 640px){
+  .contacto__lista{ flex-direction:column; align-items:flex-start; width:max-content; max-width:100%; gap:18px; }
+}
+
+/* ===== powered by ===== */
+.footer__powered{
+  display:flex; align-items:center; justify-content:center; gap:10px;
+  margin-top:32px; padding-top:22px;
+  border-top:1px solid rgba(245,241,230,.15);
+  font-size:.85rem;
+}
+.footer__powered > span{ opacity:.85; }
+/* el logo conserva sus colores originales: va sobre una píldora crema para que se lea en el pie oscuro */
+.footer__powered-logo{
+  height:58px; width:auto;
+  padding:9px 18px;
+  background:var(--cream);
+  border-radius:999px;
+}
+.footer__powered-logo + .footer__powered-name{ display:none; }
+.footer__powered-name{ font-family:var(--display); font-size:1rem; letter-spacing:.02em; }
