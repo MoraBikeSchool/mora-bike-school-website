@@ -127,7 +127,7 @@ ul{padding-left:1.1em;}
 .btn:hover{ transform:translateY(-2px); }
 .btn--coral{ background:var(--navy); color:var(--cream); border-color:var(--navy); }
 
-@media (max-width: 780px){
+@media (max-width: 900px){
   .nav__inner{ padding:8px 16px; }
   .nav__logo{ height:56px; }
   .nav__wordmark{ font-size:.8rem; }
@@ -168,17 +168,125 @@ ul{padding-left:1.1em;}
 .nosotros__text h2{ font-size:2.2rem; color:var(--coral-dark); }
 .nosotros__text p{ max-width:52ch; font-size:1.05rem; }
 .nosotros__media{
-  display:grid;
-  grid-template-columns:1.2fr .9fr;
+  display:flex;
   gap:14px;
-  align-items:end;
+  align-items:flex-start;
 }
-.nosotros__media img:first-child{ grid-row:span 2; height:100%; object-fit:cover; }
+.nosotros__media img{ display:block; min-width:0; object-fit:cover; }
+/* misma altura para las dos fotos: la de grupo se ve completa (751:720) y la de Isabella en 4:5 */
+.nosotros__media img:first-child{ flex:1.04 1 0; aspect-ratio:751 / 720; }
+.nosotros__media img:last-child{ flex:.8 1 0; aspect-ratio:4 / 5; object-position:center 30%; }
+
+/* firma de la directora */
+.firma{ margin-top:30px; }
+.firma__linea{ display:block; width:56px; height:4px; background:var(--coral); margin-bottom:14px; }
+.firma__nombre{ display:block; font-family:var(--display); font-size:1.4rem; line-height:1.15; color:var(--navy); }
+.firma__cargo{ display:block; margin-top:4px; font-size:.98rem; color:#555; }
 
 @media (max-width: 860px){
   .nosotros{ grid-template-columns:1fr; padding:64px 20px; }
-  .nosotros__media{ grid-template-columns:1fr 1fr; }
-  .nosotros__media img:first-child{ height:auto; }
+}
+
+/* ===== Coaches ===== */
+.coaches{
+  background:var(--coral) url("images/patterns/topo-coral.svg");
+  background-size:360px 360px;
+  color:var(--cream);
+  padding:130px 24px 170px;
+  clip-path:polygon(0 0, 100% 40px, 100% 100%, 0 100%);
+  margin-top:-40px;
+  position:relative;
+  z-index:1;
+}
+.coaches__inner{ max-width:1200px; margin:0 auto; }
+.coaches__title{ text-align:center; font-size:2.4rem; color:var(--cream); margin-bottom:8px; }
+.coaches__sub{ text-align:center; font-size:1.2rem; font-weight:700; margin-bottom:56px; }
+.coaches__hint{ display:none; }
+.coaches__grid{
+  display:flex; flex-wrap:wrap; justify-content:center; gap:36px 28px;
+}
+.coach{
+  flex:0 1 252px;
+  display:flex; flex-direction:column;
+  background:var(--cream);
+  color:var(--ink);
+  border-radius:2px;
+  box-shadow:6px 6px 0 rgba(43,46,56,.35);
+  transition:transform .18s ease;
+}
+.coach:nth-child(odd){ transform:rotate(-1.2deg); }
+.coach:nth-child(even){ transform:rotate(1.2deg); }
+.coach:hover{ transform:rotate(0) translateY(-4px); }
+
+.coach__photo{
+  position:relative;
+  aspect-ratio:4 / 5;
+  overflow:hidden;
+  background:var(--gold);
+}
+.coach:nth-child(3n+2) .coach__photo{ background:var(--olive); }
+.coach:nth-child(3n+3) .coach__photo{ background:var(--navy); }
+.coach__photo::before{
+  content:""; position:absolute; inset:0;
+  background:url("images/patterns/topo-cream.svg"); background-size:300px 300px;
+  opacity:.35;
+}
+.coach__initial{
+  position:absolute; inset:0;
+  display:flex; align-items:center; justify-content:center;
+  font-family:var(--hero-font);
+  font-size:7rem; line-height:1;
+  color:var(--cream);
+  text-transform:uppercase;
+}
+.coach__photo > img:not(.coach__badge){
+  position:absolute; inset:0;
+  width:100%; height:100%;
+  object-fit:cover; object-position:center 22%;
+}
+.coach__badge{
+  position:absolute; right:10px; bottom:26px;
+  width:46px; height:46px;
+  transform:rotate(8deg);
+  filter:drop-shadow(0 2px 3px rgba(0,0,0,.35));
+}
+.coach__body{ padding:0 18px 22px; flex:1; }
+.coach__name{
+  display:inline-block;
+  background:var(--navy);
+  color:var(--cream);
+  font-family:var(--display);
+  font-size:1.1rem;
+  padding:6px 14px 7px;
+  margin:-18px 0 12px -4px;
+  position:relative;
+  transform:rotate(-2deg);
+}
+.coach__body p{ font-size:.93rem; line-height:1.55; margin:0; }
+
+@media (prefers-reduced-motion: reduce){
+  .coach{ transition:none; }
+  .coach:hover{ transform:none; }
+}
+
+@media (max-width: 700px){
+  .coaches{ padding:100px 0 140px; }
+  .coaches__title{ font-size:1.9rem; }
+  .coaches__title, .coaches__sub{ padding:0 24px; }
+  .coaches__sub{ margin-bottom:12px; }
+  .coaches__hint{
+    display:block; text-align:center; font-weight:700; font-size:1.05rem;
+    margin:0 0 6px;
+  }
+  .coaches__grid{
+    flex-wrap:nowrap; justify-content:flex-start;
+    overflow-x:auto; scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+    gap:18px; padding:22px 24px 34px;
+  }
+  .coach{ flex:0 0 78%; scroll-snap-align:center; }
+  .coach:nth-child(n){ transform:none; }
+  .coach__initial{ font-size:6rem; }
 }
 
 /* ===== Clases ===== */
@@ -379,16 +487,23 @@ ul{padding-left:1.1em;}
   display:flex; align-items:center; justify-content:center;
   border-radius:50%;
 }
-.form-embed-placeholder{
-  border:2px dashed var(--navy);
-  border-radius:4px;
-  padding:32px;
-  text-align:center;
-  color:var(--navy);
-  font-weight:700;
-  background:rgba(43,46,56,.08);
-}
+.form-embed-cta{ text-align:center; padding:16px 0; }
 .inscribete__media img{ height:100%; width:100%; object-fit:cover; min-height:360px; }
+.btn--outline-navy{
+  background:transparent;
+  color:var(--navy);
+  border:3px solid var(--navy);
+}
+
+/* ===== Reporta tu pago ===== */
+.reporta-pago{
+  background:var(--cream);
+  text-align:center;
+  padding:80px 24px;
+}
+.reporta-pago__logo{ height:64px; margin:0 auto 20px; }
+.reporta-pago h2{ font-family:var(--display); font-size:1.8rem; color:var(--coral-dark); margin-bottom:12px; }
+.reporta-pago p{ max-width:46ch; margin:0 auto 28px; color:#444; }
 
 @media (max-width: 860px){
   .inscribete{ grid-template-columns:1fr; }
