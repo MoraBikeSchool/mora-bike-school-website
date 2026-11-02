@@ -277,3 +277,9 @@ p{ margin:0 0 1rem; }
 .nav__cta{ padding:8px 15px !important; font-size:.6rem !important; }
 @media (max-width:900px){ .hero__inner{ padding-top:128px; } .hero__logo{ width:100px; top:14px; } }
 @media (max-width:560px){ .btn{ padding:10px 18px; } }
+
+/* v8.3: logo de la portada arriba a la izquierda */
+.hero__logo{ left:clamp(18px,4vw,64px); top:clamp(16px,2.4vw,28px); transform:none; width:clamp(86px,9vw,128px); }
+@media (max-width:900px){ .hero__inner{ padding-top:112px; } .hero__logo{ width:84px; left:16px; top:14px; } }
+
+@media (max-width:900px){ .hero__inner{ padding-top:126px; } }
