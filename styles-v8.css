@@ -284,27 +284,31 @@ p{ margin:0 0 1rem; }
 
 @media (max-width:900px){ .hero__inner{ padding-top:126px; } }
 
-/* v8.4: tipografía de títulos Londrina Solid (la más parecida al logo); Outfit para los textos */
-:root{ --display:"Londrina Solid","Outfit",system-ui,sans-serif; }
-.title{ font-weight:900; font-size:clamp(2.8rem,6vw,4.4rem); letter-spacing:.005em; line-height:.98; }
-.hero__title{ font-weight:900; font-size:clamp(4.4rem,14.5vw,12.6rem); line-height:.82; letter-spacing:.005em; }
-.hero__title .r4f{ margin-top:-.38em; }
-.clases-teaser__title, .page-hero h1{ font-weight:900; letter-spacing:.005em; font-size:clamp(4.8rem,15.5vw,13rem); line-height:.82; }
-.slogan{ font-weight:900; font-size:clamp(2.8rem,6.2vw,4.9rem); letter-spacing:.005em; line-height:.92; }
-.reporta h2{ font-weight:900; font-size:clamp(2.3rem,4.8vw,3.7rem); letter-spacing:.005em; line-height:1; }
-.tipo__head h2{ font-weight:900; font-size:clamp(2.2rem,4.8vw,3.4rem); letter-spacing:.005em; line-height:1; }
-.coach__name{ font-size:1.5rem; font-weight:900; letter-spacing:.012em; }
-.firma__nombre{ font-size:1.45rem; font-weight:900; letter-spacing:.012em; }
-.extra h3, .gal__soon b{ font-size:1.55rem; font-weight:900; letter-spacing:.01em; }
-.precio b{ font-size:1.65rem; font-weight:900; }
-.pin-label b{ font-size:1.16em; font-weight:900; letter-spacing:.01em; }
-.inscribete h2.sub{ font-size:1.6rem; font-weight:900; margin:14px 0 22px; letter-spacing:.01em; }
-.nav__brand span{ font-size:1.2rem; font-weight:900; letter-spacing:.02em; line-height:1; }
-.footer__brand span{ font-size:1.55rem; font-weight:900; }
-.pasos li::before{ font-size:1.3rem; font-weight:900; }
+/* v8.5: tipografía de títulos Bowlby One; Outfit para los textos y rótulos pequeños */
+html{ font-synthesis:none; }
+:root{ --display:"Bowlby One","Outfit",system-ui,sans-serif; }
+.title, .hero__title, .clases-teaser__title, .page-hero h1, .slogan, .reporta h2, .tipo__head h2, .coach__name, .firma__nombre, .extra h3, .gal__soon b, .precio b, .pin-label b, .inscribete h2.sub, .nav__brand span, .footer__brand span, .pasos li::before, .coach__initial{ font-family:var(--display); font-weight:400; }
+.title{ font-size:clamp(1.95rem,4.3vw,3.2rem); letter-spacing:-.01em; line-height:1.06; }
+.hero__title{ font-size:clamp(3.2rem,10.2vw,9rem); line-height:.96; letter-spacing:-.02em; }
+.hero__title .r4f{ margin-top:-.5em; }
+.clases-teaser__title, .page-hero h1{ font-size:clamp(3.3rem,10.6vw,8.8rem); line-height:.95; letter-spacing:-.02em; }
+.slogan{ font-size:clamp(1.9rem,4.4vw,3.3rem); line-height:1.1; letter-spacing:-.01em; }
+.reporta h2{ font-size:clamp(1.7rem,3.6vw,2.7rem); line-height:1.1; letter-spacing:-.01em; }
+.tipo__head h2{ font-size:clamp(1.6rem,3.5vw,2.5rem); line-height:1.08; letter-spacing:-.01em; }
+.coach__name{ font-size:1.08rem; letter-spacing:0; }
+.firma__nombre{ font-size:1.02rem; letter-spacing:0; }
+.extra h3, .gal__soon b{ font-size:1.08rem; letter-spacing:0; }
+.precio b{ font-size:1.18rem; }
+.pin-label b{ font-size:.96em; letter-spacing:0; }
+.inscribete h2.sub{ font-size:1.12rem; margin:16px 0 24px; letter-spacing:0; }
+.nav__brand span{ font-size:.86rem; letter-spacing:0; line-height:1.1; }
+.footer__brand span{ font-size:1.05rem; }
+.pasos li::before{ font-size:1.02rem; }
 /* rótulos pequeños en Outfit (mayúsculas) para que se lean bien */
 .btn, .nav__links a, .nav__cta, .eyebrow, .hero__kicker, .clases-teaser__eyebrow, .tag, .precios h3, .back{ font-family:var(--body); font-weight:700; }
 .btn{ font-size:.7rem; letter-spacing:.07em; }
 .nav__links a{ font-size:.74rem; letter-spacing:.08em; } .nav__cta{ font-size:.68rem !important; }
 .eyebrow, .hero__kicker, .clases-teaser__eyebrow{ font-size:.82rem; letter-spacing:.2em; }
 .tag{ font-size:.72rem; letter-spacing:.08em; } .precios h3{ font-size:.8rem; letter-spacing:.14em; } .back{ font-size:.78rem; letter-spacing:.08em; }
+
+@media (max-width:700px){ .hero__title .r4f{ margin-top:-.12em; } }
