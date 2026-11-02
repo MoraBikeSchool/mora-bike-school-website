@@ -1,379 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mora Bike School — Escuela de mountain bike para niños y jóvenes</title>
-<meta name="description" content="Escuela de ciclismo de montaña para niños y jóvenes de 2 a 18 años. Clases grupales y privadas en Caracas. Aprende, rueda, sonríe.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mora Bike School — Ride For Fun</title>
+<meta name="description" content="Mora Bike School: escuela de mountain bike para niños y jóvenes de 2 a 18 años en Caracas, Venezuela.">
 <link rel="icon" href="images/mora-logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Unbounded:wght@500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=20261023">
-<link rel="stylesheet" href="styles-v6.css?v=20261103">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Outfit:wght@400;500;600;700&family=Unbounded:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles-v8.css?v=20261105">
 </head>
-<body>
-
-<header class="nav" id="top">
-  <div class="nav__inner">
-    <a href="#top" class="nav__brand">
-      <img src="images/mora-logo.png" alt="Mora Bike School" class="nav__logo">
-      <span class="nav__wordmark">Mora Bike<br>School</span>
-    </a>
-    <nav class="nav__links">
+<body id="top"><header class="nav">
+  <div class="wrap nav__in">
+    <a class="nav__brand" href="#top"><img src="images/mora-logo.png" alt="" width="46" height="46"><span>Mora Bike<br>School</span></a>
+    <input class="nav__toggle sr" type="checkbox" id="nt" aria-label="Abrir menú"><label class="nav__burger" for="nt" aria-hidden="true"><span></span></label>
+    <nav class="nav__links" aria-label="Principal">
       <a href="#nosotros">Nosotros</a>
       <a href="#coaches">Coaches</a>
       <a href="#clases">Clases</a>
-      <a href="#ubicaciones">Dónde rodamos</a>
+      <a href="#parques">Parques y Pistas</a>
       <a href="#normas">Normas</a>
       <a href="#inscribete" class="nav__cta">Inscribe a tu hijo</a>
     </nav>
   </div>
 </header>
-
-<section class="hero hero-v4 sec sec--gold">
-  <div class="deco" aria-hidden="true"><svg class="deco__tracks" viewBox="0 0 600 120" fill="none" stroke="currentColor" stroke-linecap="butt"><path d="M0 74C95 8 195 118 300 62S505 6 600 58" stroke-width="14" stroke-dasharray="5 8"/></svg><span class="deco__ride"><svg class="deco__bike" viewBox="0 0 64 40" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><g class="wheel"><circle cx="13" cy="27" r="10"/><path d="M13 17v20M3 27h20M6 20l14 14M20 20L6 34" stroke-width=".6"/></g><g class="wheel"><circle cx="51" cy="27" r="10"/><path d="M51 17v20M41 27h20M44 20l14 14M58 20L44 34" stroke-width=".6"/></g><path d="M13 27L24 11H43L51 27M13 27H30L24 11M30 27L43 11"/><path d="M20 8h9M43 11l-2-5h7"/><g class="wheel"><path d="M30 27l4 5M30 27l-4-5"/></g></svg></span></div>
-  <img class="band band--hero" src="images/escenas/hero-band.webp" alt="" aria-hidden="true">
-  <div class="hero-v4__inner">
-    <div class="hero-v4__text">
-      <p class="hero__kicker">Escuela de mountain bike · niños y jóvenes de 2 a 18 años</p>
-      <h1 class="ride-title"><span>Ride</span><span>for</span><span class="ride-title__fun">fun</span></h1>
-      <p class="hero__lead">Enseñanza formativa, recreativa y progresiva del ciclismo de montaña — para que cada niño gane confianza a su propio ritmo, en la naturaleza.</p>
-      <a href="#inscribete" class="btn btn--coral">Inscribe a tu hijo</a>
-    </div>
-    <div class="scene scene--hero"><img class="scene__ghost" src="images/escenas/hero-ghost.webp" alt="" aria-hidden="true"><img class="scene__cut" src="images/escenas/hero-cut.webp" alt="Niño con casco, gafas y equipo naranja sobre su bicicleta"></div>
+<main>
+<section class="hero sec" id="inicio" aria-label="Portada">
+  <img class="hero__bg" src="images/hero/portada-principal.webp" alt="Coaches y alumnos de Mora Bike School alineados con sus bicis en un sendero del bosque de pinos">
+  <div class="hero__veil"></div>
+  <img class="hero__logo" src="images/hero/mora-logo-hero.webp" alt="Mora Bike School">
+  <svg class="deco-track" viewBox="0 0 600 120" fill="none" stroke="currentColor" aria-hidden="true"><path d="M0 74C95 8 195 118 300 62S505 6 600 58" stroke-width="14" stroke-dasharray="5 8"/></svg>
+  <div class="wrap hero__inner">
+    <p class="hero__kicker">Escuela de mountain bike · niños y jóvenes de 2 a 18 años</p>
+    <h1 class="hero__title">Ride For <span class="fun">Fun</span><span class="r4f" aria-hidden="true">R4F</span></h1>
+    <div class="hero__cta"><a class="btn btn--coral" href="#inscribete">Inscribe a tu hijo</a><a class="btn btn--ghost" href="clases.html">Conoce las clases</a></div>
   </div>
+  <svg class="wave wave--bottom" viewBox="0 0 1440 90" preserveAspectRatio="none" style="color:#FFFDF8" aria-hidden="true"><path d="M0 0H1440V44C1260 94 1090 4 900 38S560 90 360 46 100 8 0 52Z"/></svg>
 </section>
 
-<section class="nosotros nosotros-v4 sec sec--olive" id="nosotros">
-  <div class="deco deco--rtl" aria-hidden="true"><span class="deco__ride"><svg class="deco__bike" viewBox="0 0 64 40" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><g class="wheel"><circle cx="13" cy="27" r="10"/><path d="M13 17v20M3 27h20M6 20l14 14M20 20L6 34" stroke-width=".6"/></g><g class="wheel"><circle cx="51" cy="27" r="10"/><path d="M51 17v20M41 27h20M44 20l14 14M58 20L44 34" stroke-width=".6"/></g><path d="M13 27L24 11H43L51 27M13 27H30L24 11M30 27L43 11"/><path d="M20 8h9M43 11l-2-5h7"/><g class="wheel"><path d="M30 27l4 5M30 27l-4-5"/></g></svg></span></div>
-  <img class="band band--nosotros" src="images/escenas/nosotros-band.webp" alt="" aria-hidden="true">
-  <div class="nosotros__inner">
-    <div class="nosotros__text">
-      <h2>Sobre nosotros</h2>
-      <p>Somos una escuela de ciclismo para niños y adultos que garantiza la enseñanza y el desarrollo de este deporte a través de una práctica formativa y recreativa, consciente y progresiva.</p>
-      <p>Promovemos el ciclismo de manera integral, con el objetivo de potenciar el desarrollo deportivo de cada persona mediante actividades pensadas para su edad y su nivel — siempre entre montaña, tierra y buena compañía.</p>
-      <div class="firma">
-        <span class="firma__linea" aria-hidden="true"></span>
-        <span class="firma__nombre">Isabella Mora</span>
-        <span class="firma__cargo">Directora y Fundadora de Mora Bike School</span>
+<section class="nosotros sec" id="nosotros">
+  <img class="ring ring--tr" src="images/deco/ring-coral.svg" alt="" aria-hidden="true">
+  <div class="wrap">
+    <div class="nosotros__grid">
+      <div class="nosotros__photo"><img src="images/isa/isa-carnet.webp" alt="Isabella Mora, directora y fundadora de Mora Bike School, con casco y su bici en el bosque" loading="lazy"></div>
+      <div class="nosotros__text">
+        <p class="eyebrow">Quiénes somos</p>
+        <h2 class="title">Sobre nosotros</h2>
+        <p style="margin-top:22px">Somos una escuela de ciclismo para niños y adultos que garantiza la enseñanza y el desarrollo de este deporte a través de una práctica formativa y recreativa, consciente y progresiva.</p>
+        <p>Promovemos el ciclismo de manera integral, con el objetivo de potenciar el desarrollo deportivo de cada persona mediante actividades pensadas para su edad y su nivel — siempre entre montaña, tierra y buena compañía.</p>
+        <!-- «Quién soy»: aquí va el texto de Isabella cuando lo envíe -->
+        <div class="firma"><div class="firma__linea"></div><div class="firma__nombre">Isabella Mora</div><div class="firma__cargo">Directora y Fundadora de Mora Bike School</div></div>
       </div>
     </div>
-    <div class="nosotros__media"><div class="scene scene--nosotros"><img class="scene__ghost" src="images/escenas/nosotros-ghost.webp" alt="" aria-hidden="true" loading="lazy"><img class="scene__cut" src="images/escenas/nosotros-cut.webp" alt="Isabella Mora, directora y fundadora de Mora Bike School, sobre su bicicleta de montaña" loading="lazy"></div></div>
   </div>
+  <div class="ribbon" role="group" aria-label="Galería de fotos en movimiento"><div class="ribbon__track"><img src="images/isa/cinta-1.webp" alt="Isabella y su equipo con las bicis en un sendero de montaña" loading="lazy"><img src="images/isa/cinta-2.webp" alt="Isabella tomando una curva de tierra con su bici" loading="lazy"><img src="images/isa/cinta-3.webp" alt="Isabella bajando por un sendero entre árboles" loading="lazy"><img src="images/isa/cinta-4.webp" alt="Isabella con su bici entre las montañas y la neblina" loading="lazy"><img src="images/isa/cinta-5.webp" alt="Isabella rodeada de niños en una actividad de la escuela" loading="lazy"><img src="images/isa/cinta-6.webp" alt="Isabella con sus alumnos en un descanso en la montaña" loading="lazy"></div></div>
 </section>
 
-<section class="coaches sec sec--navy" id="coaches">
-  <div class="deco" aria-hidden="true"><svg class="deco__tracks" viewBox="0 0 600 120" fill="none" stroke="currentColor" stroke-linecap="butt"><path d="M0 74C95 8 195 118 300 62S505 6 600 58" stroke-width="14" stroke-dasharray="5 8"/></svg><span class="deco__ride"><svg class="deco__bike" viewBox="0 0 64 40" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><g class="wheel"><circle cx="13" cy="27" r="10"/><path d="M13 17v20M3 27h20M6 20l14 14M20 20L6 34" stroke-width=".6"/></g><g class="wheel"><circle cx="51" cy="27" r="10"/><path d="M51 17v20M41 27h20M44 20l14 14M58 20L44 34" stroke-width=".6"/></g><path d="M13 27L24 11H43L51 27M13 27H30L24 11M30 27L43 11"/><path d="M20 8h9M43 11l-2-5h7"/><g class="wheel"><path d="M30 27l4 5M30 27l-4-5"/></g></svg></span></div>
-  <img class="band band--coaches band--coaches-top" src="images/escenas/coaches-top.webp" alt="" aria-hidden="true">
-  <img class="band band--coaches band--coaches-mid" src="images/escenas/coaches-mid.webp" alt="" aria-hidden="true">
-  <img class="band band--coaches band--coaches-bot" src="images/escenas/coaches-bot.webp" alt="" aria-hidden="true">
-  <!--
-    CÓMO MANTENER ESTA SECCIÓN (alta rotación de coaches)
-    - Agregar un coach: copia un bloque <article class="coach"> completo, pégalo antes del último,
-      y cambia el nombre, la inicial, el texto y el nombre del archivo de la foto.
-    - Quitar un coach: borra su bloque <article class="coach"> completo.
-    - Sticker: sube el recorte (WebP o PNG con fondo transparente) a la carpeta images/stickers/ con el nombre
-      exacto que dice el src (ej. images/stickers/kako.webp, todo en minúsculas). Mientras no exista, se muestra la inicial.
-    - Sticker ideal: persona de frente, recortada a la altura de la cintura, con borde blanco.
-  -->
-  <div class="coaches__inner">
-    <h2 class="coaches__title">Conoce a nuestros coaches</h2>
+<section class="coaches sec" id="coaches">
+  <svg class="wave wave--top" viewBox="0 0 1440 90" preserveAspectRatio="none" style="color:#FFFDF8" aria-hidden="true"><path d="M0 0H1440V44C1260 94 1090 4 900 38S560 90 360 46 100 8 0 52Z"/></svg><img class="ring ring--bl" src="images/deco/ring-gold.svg" alt="" aria-hidden="true">
+  <div class="wrap">
+    <h2 class="title title--center">Conoce a nuestros coaches</h2>
     <p class="coaches__sub">Las personas detrás de cada clase.</p>
-    <p class="coaches__hint" aria-hidden="true">Desliza para conocerlos →</p>
-    <div class="coaches__grid">
-      <article class="coach">
-        <div class="coach__photo">
-          <span class="coach__initial" aria-hidden="true">A</span>
-          <img class="coach__sticker" src="images/stickers/ana-cris.webp" alt="Ana Cris, coach de Mora Bike School" loading="lazy" onerror="this.remove()">
-        </div>
-        <div class="coach__body">
-          <h3 class="coach__name">Ana Cris</h3>
-          <p>¡Hola! Mi nombre es Ana Cris, soy profe de Mora Bike School y siento que gracias a esta escuela le damos un lugar seguro, divertido y extremo a los niños. Así pueden aprender deportes de riesgo en un ambiente lleno de risas, compañerismo y rodilleras.</p>
-        </div>
-      </article>
-      <article class="coach">
-        <div class="coach__photo">
-          <span class="coach__initial" aria-hidden="true">L</span>
-          <img class="coach__sticker" src="images/stickers/luis.webp" alt="Luis, coach de Mora Bike School" loading="lazy" onerror="this.remove()">
-        </div>
-        <div class="coach__body">
-          <h3 class="coach__name">Luis</h3>
-          <p>¡Hola! Me llamo Luis, soy profe de Mora Bike School y me encanta ver la evolución de los niños sobre la bici, que puedan aprender trucos, saltos y bajadas y todo con seguridad mientras comparten con sus amigos.</p>
-        </div>
-      </article>
-      <article class="coach">
-        <div class="coach__photo">
-          <span class="coach__initial" aria-hidden="true">J</span>
-          <img class="coach__sticker" src="images/stickers/jean.webp" alt="Jean, coach de Mora Bike School" loading="lazy" onerror="this.remove()">
-        </div>
-        <div class="coach__body">
-          <h3 class="coach__name">Jean</h3>
-          <p>¡Hola! Me llamo Jean, soy profe de Mora Bike School. Me apasiona ver la evolución de los niños tras cada clase y saber que cada sesión deja una huella positiva en su futuro sobre la bici y en la vida.</p>
-        </div>
-      </article>
-      <article class="coach">
-        <div class="coach__photo">
-          <span class="coach__initial" aria-hidden="true">E</span>
-          <img class="coach__sticker" src="images/stickers/esteban.webp" alt="Esteban, coach de Mora Bike School" loading="lazy" onerror="this.remove()">
-        </div>
-        <div class="coach__body">
-          <h3 class="coach__name">Esteban</h3>
-          <p>¡Hola! Me llamo Esteban, soy profe de Mora Bike School y me encanta poder ver cómo los niños son cada vez más capaces de hacer cosas que para ellos parecían imposibles, cómo cada vez se divierten más conmigo y vamos creando bonitas amistades en el proceso. Esta etapa es algo que nunca olvidarán.</p>
-        </div>
-      </article>
-      <article class="coach">
-        <div class="coach__photo">
-          <span class="coach__initial" aria-hidden="true">M</span>
-          <img class="coach__sticker" src="images/stickers/mike.webp" alt="Mike, coach de Mora Bike School" loading="lazy" onerror="this.remove()">
-        </div>
-        <div class="coach__body">
-          <h3 class="coach__name">Mike</h3>
-          <p>¡Hola! Mi nombre es Mike, disfruto mucho estar en bici porque siento que nos desconectamos y disfrutamos de lugares increíbles. Adoro dar clase a los niños porque siempre que aprenden algo nuevo nos contagian con su alegría, sus logros son nuestros logros. En la escuela siempre vamos a estar felices de que tus hijos quieran aprender y disfrutar con nosotros.</p>
-        </div>
-      </article>
-      <article class="coach">
-        <div class="coach__photo">
-          <span class="coach__initial" aria-hidden="true">D</span>
-          <img class="coach__sticker" src="images/stickers/diego.webp" alt="Diego, coach de Mora Bike School" loading="lazy" onerror="this.remove()">
-        </div>
-        <div class="coach__body">
-          <h3 class="coach__name">Diego</h3>
-          <p>¡Hola! Me llamo Diego, soy coach de Mora Bike School y me gusta ver cómo los chicos superan sus miedos clase tras clase, ¡hasta convertirse en verdaderos cracks sobre la bici!</p>
-        </div>
-      </article>
-      <article class="coach">
-        <div class="coach__photo">
-          <span class="coach__initial" aria-hidden="true">E</span>
-          <img class="coach__sticker" src="images/stickers/erika.webp" alt="Erika, coach de Mora Bike School" loading="lazy" onerror="this.remove()">
-        </div>
-        <div class="coach__body">
-          <h3 class="coach__name">Erika</h3>
-          <p>¡Hola! Soy la profe Erika, una apasionada por lo extremo, lo divertido y las aventuras. Amo con locura a los niños más chiquitos de la escuela: acompañarlos desde el comienzo y ver su progreso es mi mejor misión. Aquí descubrí mi verdadera vocación: ese puente de amor donde enseñas con el alma y te transformas con lo que aprendes cada día.</p>
-        </div>
-      </article>
-      <article class="coach">
-        <div class="coach__photo">
-          <span class="coach__initial" aria-hidden="true">K</span>
-          <img class="coach__sticker" src="images/stickers/kako.webp" alt="Kako, coach de Mora Bike School" loading="lazy" onerror="this.remove()">
-        </div>
-        <div class="coach__body">
-          <h3 class="coach__name">Kako</h3>
-          <p>¡Hola! Soy Kako, profesor de Mora Bike School. Dos ruedas pueden enseñarle a un niño mucho más que pedalear: confianza, valentía y resiliencia. Mi prioridad en cada clase: seguridad absoluta y diversión al máximo. Me caracterizan la paciencia y el vínculo cercano con cada alumno. Mi mayor satisfacción es ver cómo los niños pierden el miedo y terminan cada clase con una sonrisa gigante.</p>
-        </div>
-      </article>
-      <article class="coach">
-        <div class="coach__photo">
-          <span class="coach__initial" aria-hidden="true">C</span>
-          <img class="coach__sticker" src="images/stickers/carlos.webp" alt="Carlos, coach de Mora Bike School" loading="lazy" onerror="this.remove()">
-        </div>
-        <div class="coach__body">
-          <h3 class="coach__name">Carlos</h3>
-          <p>¡Hola! Soy el coach Carlos. Me apasionan los deportes y, especialmente, el ciclismo, ya sea de ruta o de montaña. En la escuela encontré otra de mis grandes pasiones: enseñarle a las nuevas generaciones lo hermoso de esta disciplina. Mi objetivo con cada niño es que cada clase esté llena de pasión, aprendizaje, crecimiento y diversión.</p>
-        </div>
-      </article>
-      <article class="coach">
-        <div class="coach__photo">
-          <span class="coach__initial" aria-hidden="true">F</span>
-          <img class="coach__sticker" src="images/stickers/fede.webp" alt="Fede, coach de Mora Bike School" loading="lazy" onerror="this.remove()">
-        </div>
-        <div class="coach__body">
-          <h3 class="coach__name">Fede</h3>
-          <p>¡Hola! Mi nombre es Fede y soy profe de Mora Bike. Lo que más me gusta de dar clases es enseñarle a los niños que no importa qué tan difícil se pueda ver algo: con disciplina y práctica uno puede lograr cosas increíbles con amigos y disfrutando al máximo siempre.</p>
-        </div>
-      </article>
-    </div>
+    <div class="coaches__grid"><article class="coach"><div class="coach__photo"><img src="images/coaches/kako.webp" alt="Kako, coach de Mora Bike School" loading="lazy"></div><h3 class="coach__name">Kako</h3><p>¡Hola! Soy Kako, profesor de Mora Bike School. Dos ruedas pueden enseñarle a un niño mucho más que pedalear: confianza, valentía y resiliencia. Mi prioridad en cada clase: seguridad absoluta y diversión al máximo. Me caracterizan la paciencia y el vínculo cercano con cada alumno. Mi mayor satisfacción es ver cómo los niños pierden el miedo y terminan cada clase con una sonrisa gigante.</p></article><article class="coach"><div class="coach__photo"><img src="images/coaches/carlos.webp" alt="Carlos, coach de Mora Bike School" loading="lazy"></div><h3 class="coach__name">Carlos</h3><p>¡Hola! Soy el coach Carlos. Me apasionan los deportes y, especialmente, el ciclismo, ya sea de ruta o de montaña. En la escuela encontré otra de mis grandes pasiones: enseñarle a las nuevas generaciones lo hermoso de esta disciplina. Mi objetivo con cada niño es que cada clase esté llena de pasión, aprendizaje, crecimiento y diversión.</p></article><article class="coach"><div class="coach__photo"><img src="images/coaches/esteban.webp" alt="Esteban, coach de Mora Bike School" loading="lazy"></div><h3 class="coach__name">Esteban</h3><p>¡Hola! Me llamo Esteban, soy profe de Mora Bike School y me encanta poder ver cómo los niños son cada vez más capaces de hacer cosas que para ellos parecían imposibles, cómo cada vez se divierten más conmigo y vamos creando bonitas amistades en el proceso. Esta etapa es algo que nunca olvidarán.</p></article><article class="coach"><div class="coach__photo"><img src="images/coaches/erika.webp" alt="Erika, coach de Mora Bike School" loading="lazy"></div><h3 class="coach__name">Erika</h3><p>¡Hola! Soy la profe Erika, una apasionada por lo extremo, lo divertido y las aventuras. Amo con locura a los niños más chiquitos de la escuela: acompañarlos desde el comienzo y ver su progreso es mi mejor misión. Aquí descubrí mi verdadera vocación: ese puente de amor donde enseñas con el alma y te transformas con lo que aprendes cada día.</p></article><article class="coach"><div class="coach__photo"><img src="images/coaches/ana.webp" alt="Ana Cris, coach de Mora Bike School" loading="lazy"></div><h3 class="coach__name">Ana Cris</h3><p>¡Hola! Mi nombre es Ana Cris, soy profe de Mora Bike School y siento que gracias a esta escuela le damos un lugar seguro, divertido y extremo a los niños. Así pueden aprender deportes de riesgo en un ambiente lleno de risas, compañerismo y rodilleras.</p></article><article class="coach"><div class="coach__photo"><img src="images/coaches/luis.webp" alt="Luis, coach de Mora Bike School" loading="lazy"></div><h3 class="coach__name">Luis</h3><p>¡Hola! Me llamo Luis, soy profe de Mora Bike School y me encanta ver la evolución de los niños sobre la bici, que puedan aprender trucos, saltos y bajadas y todo con seguridad mientras comparten con sus amigos.</p></article><article class="coach"><div class="coach__photo"><img src="images/coaches/jean.webp" alt="Jean, coach de Mora Bike School" loading="lazy"></div><h3 class="coach__name">Jean</h3><p>¡Hola! Me llamo Jean, soy profe de Mora Bike School. Me apasiona ver la evolución de los niños tras cada clase y saber que cada sesión deja una huella positiva en su futuro sobre la bici y en la vida.</p></article><article class="coach"><div class="coach__photo"><img src="images/coaches/mike.webp" alt="Mike, coach de Mora Bike School" loading="lazy"></div><h3 class="coach__name">Mike</h3><p>¡Hola! Mi nombre es Mike, disfruto mucho estar en bici porque siento que nos desconectamos y disfrutamos de lugares increíbles. Adoro dar clase a los niños porque siempre que aprenden algo nuevo nos contagian con su alegría, sus logros son nuestros logros. En la escuela siempre vamos a estar felices de que tus hijos quieran aprender y disfrutar con nosotros.</p></article><article class="coach"><div class="coach__photo"><span class="coach__initial" aria-hidden="true">D</span></div><h3 class="coach__name">Diego</h3><p>¡Hola! Me llamo Diego, soy coach de Mora Bike School y me gusta ver cómo los chicos superan sus miedos clase tras clase, ¡hasta convertirse en verdaderos cracks sobre la bici!</p></article><article class="coach"><div class="coach__photo"><img src="images/coaches/fede.webp" alt="Fede, coach de Mora Bike School" loading="lazy"></div><h3 class="coach__name">Fede</h3><p>¡Hola! Mi nombre es Fede y soy profe de Mora Bike. Lo que más me gusta de dar clases es enseñarle a los niños que no importa qué tan difícil se pueda ver algo: con disciplina y práctica uno puede lograr cosas increíbles con amigos y disfrutando al máximo siempre.</p></article></div>
   </div>
 </section>
 
-<section class="clases sec sec--coral" id="clases">
-  <div class="deco deco--rtl" aria-hidden="true"><span class="deco__ride"><svg class="deco__bike" viewBox="0 0 64 40" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><g class="wheel"><circle cx="13" cy="27" r="10"/><path d="M13 17v20M3 27h20M6 20l14 14M20 20L6 34" stroke-width=".6"/></g><g class="wheel"><circle cx="51" cy="27" r="10"/><path d="M51 17v20M41 27h20M44 20l14 14M58 20L44 34" stroke-width=".6"/></g><path d="M13 27L24 11H43L51 27M13 27H30L24 11M30 27L43 11"/><path d="M20 8h9M43 11l-2-5h7"/><g class="wheel"><path d="M30 27l4 5M30 27l-4-5"/></g></svg></span></div>
-  <img class="band band--clases" src="images/escenas/clases-band.webp" alt="" aria-hidden="true">
-  <h2 class="clases__title">Clases</h2>
-  <p class="clases__sub">Grupales y privadas, en montaña o en casa.</p>
+<a class="clases-teaser sec" id="clases" href="clases.html" aria-label="Ver las clases grupales y privadas, con tarifas y fotos">
+  <svg class="wave wave--top" viewBox="0 0 1440 90" preserveAspectRatio="none" style="color:#F5F1E6" aria-hidden="true"><path d="M0 0H1440V44C1260 94 1090 4 900 38S560 90 360 46 100 8 0 52Z"/></svg>
+  <img src="images/home/clases-banda.webp" alt="Un grupo de niños con sus bicis en el partidor, en medio del bosque" loading="lazy">
+  <span class="clases-teaser__tint"></span><span class="clases-teaser__tint2"></span>
+  <span class="clases-teaser__in"><span class="clases-teaser__eyebrow" style="display:block">Grupales · Privadas · En montaña o en casa</span><span class="clases-teaser__title" style="display:block">Clases</span><span class="btn btn--cream">Ver fotos, info y tarifas →</span></span>
+  <svg class="wave wave--bottom" viewBox="0 0 1440 90" preserveAspectRatio="none" style="color:#FFFDF8" aria-hidden="true"><path d="M0 0H1440V44C1260 94 1090 4 900 38S560 90 360 46 100 8 0 52Z"/></svg>
+</a>
 
-  <div class="clases__grid">
-    <article class="clase-card clase-card--coral">
-      <div class="clase-card__stage"><img class="clase-card__cut" src="images/cortes-cards/grupal-cut.webp" alt="Grupo de niños de Mora Bike School posando con sus bicicletas de montaña" loading="lazy"></div>
-      <div class="clase-card__body">
-        <h3>Grupales en montaña</h3>
-        <ul class="clase-card__facts">
-          <li>Edad: 3 a 12 años</li>
-          <li>Lunes y martes, 4:30–6:30 pm</li>
-          <li>Los parques rotan cada semana</li>
-        </ul>
-        <table class="clase-card__prices">
-          <tr><td>Inscripción</td><td>$20</td></tr>
-          <tr><td>Mensualidad · 4 clases</td><td>$100</td></tr>
-          <tr><td>Mensualidad · 8 clases</td><td>$180</td></tr>
-        </table>
-        <p class="clase-card__note">La ubicación del día y la asistencia se confirman por WhatsApp.</p>
-      </div>
-    </article>
-
-    <article class="clase-card clase-card--gold">
-      <div class="clase-card__stage"><img class="clase-card__cut" src="images/cortes-cards/privada-cut.webp" alt="Clase privada individual en un sendero de montaña" loading="lazy"></div>
-      <div class="clase-card__body">
-        <h3>Privadas en montaña</h3>
-        <ul class="clase-card__facts">
-          <li>Edad: 2 años en adelante</li>
-          <li>1 hora, según disponibilidad del coach</li>
-        </ul>
-        <table class="clase-card__prices">
-          <tr><td>Por niño</td><td>$30</td></tr>
-          <tr><td>Desde el 3er niño</td><td>$25 c/u</td></tr>
-        </table>
-        <p class="clase-card__note">A conveniencia del alumno y del coach.</p>
-      </div>
-    </article>
-
-    <article class="clase-card clase-card--navy">
-      <div class="clase-card__stage"><img class="clase-card__cut" src="images/cortes-cards/casa-cut.webp" alt="Coach con un alumno preparando una clase privada en casa" loading="lazy"></div>
-      <div class="clase-card__body">
-        <h3>Privadas en casa</h3>
-        <ul class="clase-card__facts">
-          <li>Edad: 3 años en adelante</li>
-          <li>1 hora, según disponibilidad del profesor</li>
-        </ul>
-        <table class="clase-card__prices">
-          <tr><td>Por niño</td><td>$30</td></tr>
-        </table>
-        <p class="clase-card__note">El costo de entrada al parque se paga por separado, el mismo día de la clase.</p>
-      </div>
-    </article>
-  </div>
-
-  <div class="servicios">
-    <h3 class="servicios__title">¿Buscas algo distinto?</h3>
-    <p class="servicios__sub">También llevamos a Mora Bike School a donde la ocasión lo pida.</p>
-    <div class="servicios__grid">
-      <article class="servicio-card">
-        <h4>Campamentos y grupos</h4>
-        <p>Armamos campamentos de ciclismo para grupos — vacacionales, colegios o grupos privados. Plan a la medida según cantidad de niños y días.</p>
-      </article>
-      <article class="servicio-card">
-        <h4>Fiestas de cumpleaños</h4>
-        <p>Llevamos la experiencia Mora a tu celebración, con actividades de bici para todos los invitados. Cotización según cantidad de niños.</p>
-      </article>
-    </div>
-    <p class="servicios__cta">Escríbenos por WhatsApp para armar tu plan y cotizar.</p>
-  </div>
-</section>
-
-<section class="ubicaciones sec sec--navy" id="ubicaciones">
-  <div class="deco" aria-hidden="true"><svg class="deco__tracks" viewBox="0 0 600 120" fill="none" stroke="currentColor" stroke-linecap="butt"><path d="M0 74C95 8 195 118 300 62S505 6 600 58" stroke-width="14" stroke-dasharray="5 8"/></svg><span class="deco__ride"><svg class="deco__bike" viewBox="0 0 64 40" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><g class="wheel"><circle cx="13" cy="27" r="10"/><path d="M13 17v20M3 27h20M6 20l14 14M20 20L6 34" stroke-width=".6"/></g><g class="wheel"><circle cx="51" cy="27" r="10"/><path d="M51 17v20M41 27h20M44 20l14 14M58 20L44 34" stroke-width=".6"/></g><path d="M13 27L24 11H43L51 27M13 27H30L24 11M30 27L43 11"/><path d="M20 8h9M43 11l-2-5h7"/><g class="wheel"><path d="M30 27l4 5M30 27l-4-5"/></g></svg></span></div>
-  <img class="band band--ubicaciones" src="images/escenas/ubicaciones-band.webp" alt="" aria-hidden="true">
-  <div class="ubicaciones__inner">
-    <h2>Dónde rodamos</h2>
+<section class="parques sec" id="parques">
+  <img class="ring ring--tl" src="images/deco/ring-olive.svg" alt="" aria-hidden="true">
+  <div class="wrap">
+    <h2 class="title title--center">Parques y Pistas</h2>
     <div class="ruta-map">
-      <img src="images/route-map.png" alt="Mapa ilustrado de la ruta con los cuatro parques donde rueda Mora Bike School" class="ubicaciones__map">
+      <img src="images/route-map.png" alt="Mapa ilustrado de la ruta con los cuatro parques donde rueda Mora Bike School">
       <span class="pin-label pin-label--1"><b>La Limonera</b><small>Baruta</small></span>
       <span class="pin-label pin-label--2"><b>Parque Por La Paz</b><small>La Lagunita</small></span>
       <span class="pin-label pin-label--3"><b>Parque del Este</b><small>Skatepark</small></span>
       <span class="pin-label pin-label--4"><b>Parque del Hatillo</b><small>El Hatillo</small></span>
     </div>
   </div>
-  <div class="scene scene--ubicaciones"><img class="scene__ghost" src="images/escenas/ubicaciones-ghost.webp" alt="" aria-hidden="true" loading="lazy"><img class="scene__cut" src="images/escenas/ubicaciones-cut.webp" alt="Un coach da indicaciones a un grupo de niños sobre sus bicicletas" loading="lazy"></div>
+  <div class="ribbon" role="group" aria-label="Galería de fotos en movimiento"><div class="ribbon__track"><img src="images/pistas/pista.webp" alt="Un grupo de niños rodando en fila por un sendero entre el pasto" loading="lazy"><img src="images/pistas/pista1.webp" alt="Un niño y un coach en una loma de tierra" loading="lazy"><img src="images/pistas/pista2.webp" alt="Pista de tierra con peraltes en un parque" loading="lazy"><img src="images/pistas/pista3.webp" alt="Un niño levantando la rueda delantera bajo unos árboles" loading="lazy"><img src="images/pistas/pista4.webp" alt="Un niño rodando por un parque con piso de adoquín" loading="lazy"><img src="images/pistas/hatillo.webp" alt="Un niño con casco rodando en una pista de tierra" loading="lazy"><img src="images/pistas/hatillo2.webp" alt="Primer plano de un niño con casco integral" loading="lazy"><img src="images/pistas/hatillo3.webp" alt="Dos niños rodando por una pista de tierra" loading="lazy"><img src="images/pistas/55.webp" alt="Pista de tierra con lomas y curvas" loading="lazy"></div></div>
 </section>
 
-<section class="normas sec sec--gold" id="normas">
-  <div class="deco deco--rtl" aria-hidden="true"><span class="deco__ride"><svg class="deco__bike" viewBox="0 0 64 40" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><g class="wheel"><circle cx="13" cy="27" r="10"/><path d="M13 17v20M3 27h20M6 20l14 14M20 20L6 34" stroke-width=".6"/></g><g class="wheel"><circle cx="51" cy="27" r="10"/><path d="M51 17v20M41 27h20M44 20l14 14M58 20L44 34" stroke-width=".6"/></g><path d="M13 27L24 11H43L51 27M13 27H30L24 11M30 27L43 11"/><path d="M20 8h9M43 11l-2-5h7"/><g class="wheel"><path d="M30 27l4 5M30 27l-4-5"/></g></svg></span></div>
-  <img class="band band--normas" src="images/escenas/normas-band.webp" alt="" aria-hidden="true">
-  <div class="normas__media"><div class="scene scene--normas"><img class="scene__ghost" src="images/escenas/normas-ghost.webp" alt="" aria-hidden="true" loading="lazy"><img class="scene__cut" src="images/escenas/normas-cut.webp" alt="Un coach de pie junto a un niño con su bicicleta" loading="lazy"></div></div>
-  <div class="normas__list">
-    <h2>Normas de la escuela</h2>
-    <ul>
-      <li>Casco obligatorio y bici en buen estado.</li>
-      <li>No se permiten bicis con rueditas de apoyo en las clases grupales — el niño debe saber andar sin rueditas o tener bici de equilibrio.</li>
-      <li>Es obligatorio confirmar la asistencia del niño.</li>
-      <li>El pago mensual debe realizarse a tiempo en la fecha de corte; de lo contrario, no podrá asistir a clases.</li>
-      <li>Ante una inasistencia, se debe notificar con 2 horas de anticipación, o se cobrará el 100% de la clase.</li>
-      <li>El único motivo de recuperación de clase es la lluvia. Las inasistencias no dan lugar a recuperación.</li>
-      <li>La puntualidad es importante.</li>
-    </ul>
+<section class="normas sec" id="normas">
+  <svg class="wave wave--top" viewBox="0 0 1440 90" preserveAspectRatio="none" style="color:#FFFDF8" aria-hidden="true"><path d="M0 0H1440V44C1260 94 1090 4 900 38S560 90 360 46 100 8 0 52Z"/></svg><img class="ring ring--br" src="images/deco/ring-coral.svg" alt="" aria-hidden="true">
+  <div class="wrap normas__grid">
+    <div class="photo-blob"><img src="images/home/normas.webp" alt="Un coach de pie junto a un niño con su bicicleta en una pista de tierra" loading="lazy"></div>
+    <div class="normas__card"><h2 class="title">Normas de la escuela</h2><ul><li>Casco obligatorio y bici en buen estado.</li><li>No se permiten bicis con rueditas de apoyo en las clases grupales — el niño debe saber andar sin rueditas o tener bici de equilibrio.</li><li>Es obligatorio confirmar la asistencia del niño.</li><li>El pago mensual debe realizarse a tiempo en la fecha de corte; de lo contrario, no podrá asistir a clases.</li><li>Ante una inasistencia, se debe notificar con 2 horas de anticipación, o se cobrará el 100% de la clase.</li><li>El único motivo de recuperación de clase es la lluvia. Las inasistencias no dan lugar a recuperación.</li><li>La puntualidad es importante.</li></ul></div>
   </div>
 </section>
 
-<section class="inscribete sec sec--coral" id="inscribete">
-  <div class="deco" aria-hidden="true"><svg class="deco__tracks" viewBox="0 0 600 120" fill="none" stroke="currentColor" stroke-linecap="butt"><path d="M0 74C95 8 195 118 300 62S505 6 600 58" stroke-width="14" stroke-dasharray="5 8"/></svg><span class="deco__ride"><svg class="deco__bike" viewBox="0 0 64 40" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><g class="wheel"><circle cx="13" cy="27" r="10"/><path d="M13 17v20M3 27h20M6 20l14 14M20 20L6 34" stroke-width=".6"/></g><g class="wheel"><circle cx="51" cy="27" r="10"/><path d="M51 17v20M41 27h20M44 20l14 14M58 20L44 34" stroke-width=".6"/></g><path d="M13 27L24 11H43L51 27M13 27H30L24 11M30 27L43 11"/><path d="M20 8h9M43 11l-2-5h7"/><g class="wheel"><path d="M30 27l4 5M30 27l-4-5"/></g></svg></span></div>
-  <img class="band band--inscribete" src="images/escenas/inscribete-band.webp" alt="" aria-hidden="true">
-  <div class="inscribete__panel">
-    <p class="slogan"><span>Aprende rodando.</span><span class="slogan__hl">Sonríe rodando.</span></p>
-    <h2>¿Listos para rodar?</h2>
-    <ol class="pasos">
-      <li><span class="pasos__num">1</span><div><strong>Llena el formulario</strong><br>Con los datos del alumno y del representante.</div></li>
-      <li><span class="pasos__num">2</span><div><strong>Recibe la confirmación</strong><br>Te llega por correo con toda la información de la academia.</div></li>
-      <li><span class="pasos__num">3</span><div><strong>Ven a tu primera clase</strong><br>Con casco, bici en buen estado y muchas ganas.</div></li>
-    </ol>
-    <div class="form-embed-cta">
-      <a href="https://forms.gle/LzUUa29kGFEzpkx97" target="_blank" rel="noopener" class="btn btn--coral">Llenar formulario de inscripción</a>
+<section class="inscribete sec" id="inscribete">
+  <svg class="wave wave--top" viewBox="0 0 1440 90" preserveAspectRatio="none" style="color:#FCE4E0" aria-hidden="true"><path d="M0 0H1440V44C1260 94 1090 4 900 38S560 90 360 46 100 8 0 52Z"/></svg><img class="ring ring--tr" src="images/deco/ring-gold.svg" alt="" aria-hidden="true"><svg class="deco-track" viewBox="0 0 600 120" fill="none" stroke="currentColor" aria-hidden="true"><path d="M0 74C95 8 195 118 300 62S505 6 600 58" stroke-width="14" stroke-dasharray="5 8"/></svg>
+  <div class="wrap inscribete__grid">
+    <div>
+      <p class="slogan"><span>Aprende rodando.</span><span class="hl">Sonríe rodando.</span></p>
+      <h2 class="sub">¿Listos para rodar?</h2>
+      <ol class="pasos"><li><b>Llena el formulario</b>Con los datos del alumno y del representante.</li><li><b>Recibe la confirmación</b>Te llega por correo con toda la información de la academia.</li><li><b>Ven a tu primera clase</b>Con casco, bici en buen estado y muchas ganas.</li></ol>
+      <a class="btn btn--coral" href="https://forms.gle/LzUUa29kGFEzpkx97" target="_blank" rel="noopener">Llenar formulario de inscripción</a>
     </div>
+    <div class="photo-blob inscribete__photo"><img src="images/home/inscripcion.webp" alt="Un grupo de niños rodando felices por un sendero de montaña" loading="lazy"></div>
   </div>
-  <div class="inscribete__media"><div class="scene scene--inscribete"><img class="scene__ghost" src="images/escenas/inscribete-ghost.webp" alt="" aria-hidden="true" loading="lazy"><img class="scene__cut" src="images/escenas/inscribete-cut.webp" alt="Un coach de espaldas observa a un niño que baja en su bicicleta azul" loading="lazy"></div></div>
 </section>
 
-<section class="reporta-pago sec sec--olive" id="reporta-pago">
-  <img class="band band--reporta" src="images/escenas/reporta-band.webp" alt="" aria-hidden="true">
-  <div class="scene scene--reporta"><img class="scene__ghost" src="images/escenas/reporta-ghost.webp" alt="" aria-hidden="true" loading="lazy"><img class="scene__cut" src="images/escenas/reporta-cut.webp" alt="Una coach corre junto a un niño que avanza en su bici de equilibrio" loading="lazy"></div>
-  <img src="images/mora-logo.png" alt="Mora Bike School" class="reporta-pago__logo">
-  <h2>¿Ya eres alumno de Mora?</h2>
-  <p>Reporta aquí tu pago de mensualidad, clase o inscripción — sea por pago móvil, Zelle o efectivo.</p>
-  <a href="https://forms.gle/vjgSHU3gJrWm9Sqm7" target="_blank" rel="noopener" class="btn btn--outline-navy">Reportar mi pago</a>
+<section class="reporta sec" id="reporta-pago">
+  <svg class="wave wave--top" viewBox="0 0 1440 90" preserveAspectRatio="none" style="color:#F5F1E6" aria-hidden="true"><path d="M0 0H1440V44C1260 94 1090 4 900 38S560 90 360 46 100 8 0 52Z"/></svg><img class="ring ring--tl" src="images/deco/ring-gold.svg" alt="" aria-hidden="true">
+  <div class="wrap"><img class="reporta__logo" src="images/mora-logo.png" alt="">
+    <h2>¿Ya eres alumno de Mora?</h2>
+    <p>Reporta aquí tu pago de mensualidad, clase o inscripción — sea por pago móvil, Zelle o efectivo.</p>
+    <a class="btn btn--cream" href="https://forms.gle/vjgSHU3gJrWm9Sqm7" target="_blank" rel="noopener">Reportar mi pago</a></div>
 </section>
 
 <section class="contacto" id="contacto" aria-label="Contacto">
-  <div class="contacto__wrap">
-  <ul class="contacto__lista">
-    <li>
-      <a href="mailto:morabikeschool@gmail.com" aria-label="Correo: morabikeschool@gmail.com">
-        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#000" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-        <span>morabikeschool@gmail.com</span>
-      </a>
-    </li>
-    <li>
-      <a href="https://wa.me/584125712176" target="_blank" rel="noopener" aria-label="WhatsApp: +58 412 5712176">
-        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#000" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><g transform="translate(5.9 5.9) scale(.51)"><path stroke-width="3.4" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></g></svg>
-        <span>+58 412 5712176</span>
-      </a>
-    </li>
-    <li>
-      <a href="https://www.instagram.com/morabikeschool/" target="_blank" rel="noopener" aria-label="Instagram: @morabikeschool">
-        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#000" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-        <span>@morabikeschool</span>
-      </a>
-    </li>
-  </ul>
-  </div>
+  <svg class="wave wave--top" viewBox="0 0 1440 90" preserveAspectRatio="none" style="color:#556053" aria-hidden="true"><path d="M0 0H1440V44C1260 94 1090 4 900 38S560 90 360 46 100 8 0 52Z"/></svg>
+  <div class="wrap"><ul>
+    <li><a href="mailto:morabikeschool@gmail.com" aria-label="Correo: morabikeschool@gmail.com"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><span>morabikeschool@gmail.com</span></a></li>
+    <li><a href="https://wa.me/584125712176" target="_blank" rel="noopener" aria-label="WhatsApp: +58 412 5712176"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><g transform="translate(5.9 5.9) scale(.51)"><path stroke-width="3.4" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></g></svg><span>+58 412 5712176</span></a></li>
+    <li><a href="https://www.instagram.com/morabikeschool/" target="_blank" rel="noopener" aria-label="Instagram: @morabikeschool"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg><span>@morabikeschool</span></a></li>
+  </ul></div>
 </section>
-
-<footer class="footer">
-  <div class="footer__brand">
-    <img src="images/mora-logo.png" alt="Mora Bike School" class="footer__logo">
-    <span class="footer__wordmark">Mora Bike School</span>
-  </div>
+</main><footer class="footer">
+  <div class="footer__brand"><img src="images/mora-logo.png" alt="Mora Bike School"><span>Mora Bike School</span></div>
   <p>Escuela de mountain bike · niños y jóvenes de 2 a 18 años</p>
-  <a href="#top" class="footer__top">Volver arriba ↑</a>
-  <div class="footer__powered">
-    <span>powered by</span>
-    <!-- Logo de Makhana: subir el archivo como images/makhana-logo.png. Mientras no exista, se muestra el nombre en texto. -->
-    <img src="images/makhana-logo.png" alt="Makhana" class="footer__powered-logo" width="174" height="40" onerror="this.remove()">
-    <strong class="footer__powered-name">Makhana</strong>
-  </div>
-</footer>
-
-
-
+  <p><a class="footer__top" href="#top">Volver arriba ↑</a></p>
+  <div class="powered"><span>powered by</span><img src="images/makhana-logo.png" alt="Makhana"></div>
+</footer><div class="lb" id="lb" role="dialog" aria-label="Foto ampliada" aria-hidden="true"><img alt=""></div>
 <script>
 (function(){
   var secs=[].slice.call(document.querySelectorAll('.sec'));
-  if(!('IntersectionObserver' in window)){ secs.forEach(function(s){ s.classList.add('seen','on'); }); return; }
-  var io=new IntersectionObserver(function(es){
-    es.forEach(function(e){
-      if(e.isIntersecting){ e.target.classList.add('seen','on'); } else { e.target.classList.remove('on'); }
-    });
-  },{threshold:.12});
-  secs.forEach(function(s){ io.observe(s); });
+  if('IntersectionObserver' in window){ var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('seen'); } }); },{threshold:.12}); secs.forEach(function(s){ io.observe(s); }); }
+  else { secs.forEach(function(s){ s.classList.add('seen'); }); }
+  [].slice.call(document.querySelectorAll('.ribbon__track')).forEach(function(t){ var kids=[].slice.call(t.children); kids.forEach(function(k){ var c=k.cloneNode(true); c.alt=''; c.setAttribute('aria-hidden','true'); t.appendChild(c); }); t.parentNode.classList.add('on'); });
+  var lb=document.getElementById('lb'), lbi=lb.querySelector('img');
+  document.addEventListener('click',function(e){ var a=e.target.closest&&e.target.closest('a.lbx'); if(a){ e.preventDefault(); var im=a.querySelector('img'); lbi.src=(im&&(im.currentSrc||im.src))||a.getAttribute('href'); lbi.alt=(im&&im.alt)||''; lb.classList.add('on'); lb.setAttribute('aria-hidden','false'); } else if(lb.classList.contains('on')){ lb.classList.remove('on'); lb.setAttribute('aria-hidden','true'); } });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape'){ lb.classList.remove('on'); } });
 })();
-</script>
-</body>
-</html>
+</script></body></html>
