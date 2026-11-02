@@ -283,3 +283,28 @@ p{ margin:0 0 1rem; }
 @media (max-width:900px){ .hero__inner{ padding-top:112px; } .hero__logo{ width:84px; left:16px; top:14px; } }
 
 @media (max-width:900px){ .hero__inner{ padding-top:126px; } }
+
+/* v8.4: tipografía de títulos Londrina Solid (la más parecida al logo); Outfit para los textos */
+:root{ --display:"Londrina Solid","Outfit",system-ui,sans-serif; }
+.title{ font-weight:900; font-size:clamp(2.8rem,6vw,4.4rem); letter-spacing:.005em; line-height:.98; }
+.hero__title{ font-weight:900; font-size:clamp(4.4rem,14.5vw,12.6rem); line-height:.82; letter-spacing:.005em; }
+.hero__title .r4f{ margin-top:-.38em; }
+.clases-teaser__title, .page-hero h1{ font-weight:900; letter-spacing:.005em; font-size:clamp(4.8rem,15.5vw,13rem); line-height:.82; }
+.slogan{ font-weight:900; font-size:clamp(2.8rem,6.2vw,4.9rem); letter-spacing:.005em; line-height:.92; }
+.reporta h2{ font-weight:900; font-size:clamp(2.3rem,4.8vw,3.7rem); letter-spacing:.005em; line-height:1; }
+.tipo__head h2{ font-weight:900; font-size:clamp(2.2rem,4.8vw,3.4rem); letter-spacing:.005em; line-height:1; }
+.coach__name{ font-size:1.5rem; font-weight:900; letter-spacing:.012em; }
+.firma__nombre{ font-size:1.45rem; font-weight:900; letter-spacing:.012em; }
+.extra h3, .gal__soon b{ font-size:1.55rem; font-weight:900; letter-spacing:.01em; }
+.precio b{ font-size:1.65rem; font-weight:900; }
+.pin-label b{ font-size:1.16em; font-weight:900; letter-spacing:.01em; }
+.inscribete h2.sub{ font-size:1.6rem; font-weight:900; margin:14px 0 22px; letter-spacing:.01em; }
+.nav__brand span{ font-size:1.2rem; font-weight:900; letter-spacing:.02em; line-height:1; }
+.footer__brand span{ font-size:1.55rem; font-weight:900; }
+.pasos li::before{ font-size:1.3rem; font-weight:900; }
+/* rótulos pequeños en Outfit (mayúsculas) para que se lean bien */
+.btn, .nav__links a, .nav__cta, .eyebrow, .hero__kicker, .clases-teaser__eyebrow, .tag, .precios h3, .back{ font-family:var(--body); font-weight:700; }
+.btn{ font-size:.7rem; letter-spacing:.07em; }
+.nav__links a{ font-size:.74rem; letter-spacing:.08em; } .nav__cta{ font-size:.68rem !important; }
+.eyebrow, .hero__kicker, .clases-teaser__eyebrow{ font-size:.82rem; letter-spacing:.2em; }
+.tag{ font-size:.72rem; letter-spacing:.08em; } .precios h3{ font-size:.8rem; letter-spacing:.14em; } .back{ font-size:.78rem; letter-spacing:.08em; }
