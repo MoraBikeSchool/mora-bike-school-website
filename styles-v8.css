@@ -312,3 +312,30 @@ html{ font-synthesis:none; }
 .tag{ font-size:.72rem; letter-spacing:.08em; } .precios h3{ font-size:.8rem; letter-spacing:.14em; } .back{ font-size:.78rem; letter-spacing:.08em; }
 
 @media (max-width:700px){ .hero__title .r4f{ margin-top:-.12em; } }
+
+/* v8.6: Bowlby One con el grosor y la presencia que tenía Unbounded */
+.title, .hero__title, .clases-teaser__title, .page-hero h1, .slogan, .reporta h2, .tipo__head h2, .coach__name, .firma__nombre, .extra h3, .gal__soon b, .precio b, .pin-label b, .inscribete h2.sub, .nav__brand span, .footer__brand span{
+  -webkit-text-stroke:.04em currentColor; paint-order:stroke fill; }
+.title{ font-size:clamp(2.2rem,4.9vw,3.7rem); letter-spacing:-.005em; }
+.hero__title{ font-size:clamp(3.5rem,11.4vw,10rem); letter-spacing:-.015em; -webkit-text-stroke-width:.045em; }
+.hero__title .r4f{ -webkit-text-stroke:4px var(--coral); }
+.clases-teaser__title, .page-hero h1{ font-size:clamp(3.7rem,11.8vw,9.8rem); letter-spacing:-.015em; -webkit-text-stroke-width:.045em; }
+.slogan{ font-size:clamp(2.1rem,4.9vw,3.7rem); }
+.reporta h2{ font-size:clamp(1.9rem,4vw,3rem); }
+.tipo__head h2{ font-size:clamp(1.75rem,3.9vw,2.8rem); }
+.coach__name{ font-size:1.2rem; } .firma__nombre{ font-size:1.12rem; } .extra h3, .gal__soon b{ font-size:1.2rem; } .precio b{ font-size:1.3rem; }
+.pin-label b{ font-size:1.04em; } .inscribete h2.sub{ font-size:1.25rem; } .nav__brand span{ font-size:.96rem; } .footer__brand span{ font-size:1.18rem; }
+
+/* v8.7: engrosado redondeado (sin puntas en las esquinas) */
+.title, .hero__title, .clases-teaser__title, .page-hero h1, .slogan, .reporta h2, .tipo__head h2, .coach__name, .firma__nombre, .extra h3, .gal__soon b, .precio b, .pin-label b, .inscribete h2.sub, .nav__brand span, .footer__brand span{
+  -webkit-text-stroke:0; text-shadow:.022em 0 0 currentColor,-.022em 0 0 currentColor,0 .022em 0 currentColor,0 -.022em 0 currentColor,.016em .016em 0 currentColor,-.016em .016em 0 currentColor,.016em -.016em 0 currentColor,-.016em -.016em 0 currentColor; }
+.hero__title{ text-shadow:.022em 0 0 currentColor,-.022em 0 0 currentColor,0 .022em 0 currentColor,0 -.022em 0 currentColor,.016em .016em 0 currentColor,-.016em .016em 0 currentColor,.016em -.016em 0 currentColor,-.016em -.016em 0 currentColor,0 4px 30px rgba(255,253,248,.5); }
+.clases-teaser__title, .page-hero h1{ text-shadow:.022em 0 0 currentColor,-.022em 0 0 currentColor,0 .022em 0 currentColor,0 -.022em 0 currentColor,.016em .016em 0 currentColor,-.016em .016em 0 currentColor,.016em -.016em 0 currentColor,-.016em -.016em 0 currentColor,0 6px 40px rgba(0,0,0,.28); }
+.reporta h2{ text-shadow:.022em 0 0 currentColor,-.022em 0 0 currentColor,0 .022em 0 currentColor,0 -.022em 0 currentColor,.016em .016em 0 currentColor,-.016em .016em 0 currentColor,.016em -.016em 0 currentColor,-.016em -.016em 0 currentColor; }
+.hero__title .r4f{ -webkit-text-stroke:4px var(--coral); text-shadow:0 4px 0 #fff, 0 0 30px rgba(255,253,248,.95); }
+
+/* v8.8: engrosado sutil (conserva los huecos de las letras) */
+.title, .hero__title, .clases-teaser__title, .page-hero h1, .slogan, .reporta h2, .tipo__head h2, .coach__name, .firma__nombre, .extra h3, .gal__soon b, .precio b, .pin-label b, .inscribete h2.sub, .nav__brand span, .footer__brand span{ text-shadow:.009em 0 0 currentColor,-.009em 0 0 currentColor,0 .009em 0 currentColor,0 -.009em 0 currentColor,.007em .007em 0 currentColor,-.007em .007em 0 currentColor,.007em -.007em 0 currentColor,-.007em -.007em 0 currentColor; }
+.hero__title{ text-shadow:.009em 0 0 currentColor,-.009em 0 0 currentColor,0 .009em 0 currentColor,0 -.009em 0 currentColor,.007em .007em 0 currentColor,-.007em .007em 0 currentColor,.007em -.007em 0 currentColor,-.007em -.007em 0 currentColor,0 4px 30px rgba(255,253,248,.5); }
+.clases-teaser__title, .page-hero h1{ text-shadow:.009em 0 0 currentColor,-.009em 0 0 currentColor,0 .009em 0 currentColor,0 -.009em 0 currentColor,.007em .007em 0 currentColor,-.007em .007em 0 currentColor,.007em -.007em 0 currentColor,-.007em -.007em 0 currentColor,0 6px 40px rgba(0,0,0,.28); }
+.hero__title .r4f{ text-shadow:0 4px 0 #fff, 0 0 30px rgba(255,253,248,.95); }
